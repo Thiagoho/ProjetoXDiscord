@@ -1,0 +1,118 @@
+* {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+header {
+    height: 500px;
+    background-image: url('img/Header.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.card-1, .card-2 {
+    margin: 10px;
+}
+.card-2 {
+    text-align: center;
+    width: 40%;
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#btn-container {
+    display: flex;
+    justify-content:center ;
+}
+.btn-style-1, .btn-style-2{
+    width: 15em;
+    height: 2em;
+    border-radius: 12em;
+    display: block;
+    align-items: baseline;
+    background-color: #0777ff;
+    color: white;
+    border: none;
+    font-size: 1em;
+    margin: 12px ;
+    cursor: pointer;  
+        
+} 
+/* Parte do Cabeçalho completo*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   /* Parte do Cabeçalho completo*/
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 10px;
+        flex-direction: row;
+        gap: 24;
+        max-width: 1200px;
+
+    }
+    .container {
+        flex-basis: 500px;
+        flex-direction: column;
+        background-image: url('img/Background.png');
+        background-repeat: no-repeat;
+        background-size:cover; 
+        color: white;  
+    }
+    .card-2 {
+        font-size: calc(1.5em +3);
+        word-wrap: break-word;
+    }
+}
+@media  screen and (min-width: 601px) {
+    body{
+        font-size: 17px;
+    }
+   
+    
+}
+@media screen and (max-width: 600px) {
+    #btn-container {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .btn-style-1 {
+        background: lightskyblue;
+        width: 40%;
+        max-width: 300px;
+    }
+    .btn-style-2 {
+        background: rgb(42, 41, 41);
+        width: 40%;
+        max-width: 300px;
+    }
+    
+}
+/**/
