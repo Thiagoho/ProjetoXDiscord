@@ -1,118 +1,138 @@
-* {
+body {
     display: grid;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
 header {
-    height: 500px;
-    background-image: url('img/Header.png');
+    background-image: url('img/C20CYxs.png');
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-
-}
-.container {
-    display: flex;
+    color: aliceblue;
+    margin-top: 0;
+    font-family: fantasy;
     flex-direction: column;
-    text-align: center;
-}
-.card-1, .card-2 {
-    margin: 10px;
-}
-.card-2 {
-    text-align: center;
-    width: 40%;
-    padding: 20px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 0 1.2rem;
+
 
 }
-#btn-container {
-    display: flex;
-    justify-content:center ;
-}
-.btn-style-1, .btn-style-2{
-    width: 15em;
-    height: 2em;
-    border-radius: 12em;
+#container {
     display: block;
-    align-items: baseline;
-    background-color: #0777ff;
-    color: white;
+    margin-top: 3em;
+    border-top: 12px solid rgb(255, 244, .8);
+    border-bottom: 12px solid yellow;
+    font-weight: normal;
+    max-width: 35em;
+    height: 205px;
+    border-radius: 12px;
+
+}
+#container > h2, .card > p {
+    font-size: 1.2rem;
+    margin:10px;
+}
+.card {
+    padding-left: 15% ;
+    width: 80%; 
+}
+button {
     border: none;
     font-size: 1em;
-    margin: 12px ;
-    cursor: pointer;  
-        
-} 
-/* Parte do Cabeçalho completo*/
+    border-radius: 12px;
+    padding:0 2em;
+    background-color: rgb(249, 99, 99);
+    cursor: pointer;
+}
+/*Tela principal-0...*/
 
+main { 
+    background: #000;
+    font-size: 1.1em;
+    color: aliceblue;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1px;
+    border: none;
+    flex: 1;
 
+}
+picture {
+    display: contents;
+    
+}
+picture > img {
+    margin: 47px;
+    padding: auto;
+    margin-top: 15px;
+    max-width: 35%;
+    min-height: 12px;
+    border-radius: 4px;
+    margin-right: 10px;
+    margin-bottom: 40px;
+ }
+.text-skills {
+    text-align: center;
+    width:32%;
+}
+/*Tela principal 1*/
+#main-s {
+    text-align: center;
+    font-size: 1em;
 
+    margin: 0 34px;
+    max-width: 32%;
+    height: auto;
 
+}
 
+.picture > img {
+    padding: auto;
+    max-width: 35%;
+    min-height: 12px;
+    margin-left: 70px;
 
+}
+section {
+    border-top: 3px solid yellow;
+    color: aliceblue;
+    background: #000;
+    text-align: center;
 
+}
+.section-tex {
+    width: 50%;
+    margin: auto;
+}
+footer {
+    background: #000;
+    border-top: 1px solid yellow;
+}
 
+footer > img{
+    margin: auto;
+    display: block;
+    max-width: 10%;
+    
+}
 
-
-
-
-
-
-
-
-
-   /* Parte do Cabeçalho completo*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width:690px) {
     body {
-        font-size: 10px;
-        flex-direction: row;
-        gap: 24;
+        font-size: 15px;
+        flex-direction: column;
         max-width: 1200px;
+        margin: auto;
 
     }
-    .container {
-        flex-basis: 500px;
-        flex-direction: column;
-        background-image: url('img/Background.png');
-        background-repeat: no-repeat;
-        background-size:cover; 
-        color: white;  
-    }
-    .card-2 {
-        font-size: calc(1.5em +3);
-        word-wrap: break-word;
-    }
+      
+    #container {
+        margin-bottom: 23px;
+        height: auto;
+        border-bottom: 10px solid gold;
+        border-top: 10px solid;
+        border-radius: 12px;
+        flex: 1;
+    } 
+
 }
-@media  screen and (min-width: 601px) {
-    body{
-        font-size: 17px;
-    }
-   
-    
-}
-@media screen and (max-width: 600px) {
-    #btn-container {
-        flex-direction: column;
-        align-items: center;
-        
-    }
-    .btn-style-1 {
-        background: lightskyblue;
-        width: 40%;
-        max-width: 300px;
-    }
-    .btn-style-2 {
-        background: rgb(42, 41, 41);
-        width: 40%;
-        max-width: 300px;
-    }
-    
-}
-/**/
